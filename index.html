@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Criptografador e Descriptografador de Texto</title>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <main>
+                <section>
+                    <header>
+                        <h1 id="titulo">Criptografador e Descriptografador de Texto</h1>
+                    </header>
+
+                    <textarea cols="41" rows="4" class="caixa-entrada" id="caixaEntrada" placeholder="Digite seu texto..."></textarea>
+
+                    <div>
+                        <button id="cryptbtn" onclick="enviarCrypt()">Codificar texto</button>
+                        <button id="decryptbtn" onclick="enviarDecrypt()">Decodificar texto</button>
+                    </div>
+                </section>
+                
+                <section>
+                    <textarea class="caixa-saida" id="caixaSaida" cols="20" rows="10"></textarea>
+                    <div>
+                        <button id="copybtn" onclick="copiarTexto()">Copiar</button>
+                    </div>
+                    <div>
+                        <p>Apenas letras minúsculas e sem acentos.</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <img src="moon.png">
+                <p>Feito por Bruno</p>
+            </footer>
+            <script src="main.js"></script>
+
+        </body>
+</html>
