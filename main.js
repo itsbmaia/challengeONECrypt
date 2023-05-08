@@ -54,7 +54,7 @@ function descriptografarTexto(entrada) {
   }
 
 function copiarTexto() {
-  var cpytext = document.getElementById("caixaSaida").value;
+  const cpytext = document.getElementById("caixaSaida").value;
 
   if (cpytext !== "") {
     navigator.clipboard.writeText(cpytext);
